@@ -15,6 +15,8 @@ console.log("Welcome to the coding Quiz!")
 
 // Keeping Track of correct answers
 let rightAnswers = 0;
+//Setting a percentage for correctly answered questions
+const totalNumberOfQuestions = 3;
 
 //First Question
 const answer1 = prompt("What is my favourite food? ")
@@ -46,7 +48,11 @@ if (answer3[0].toUpperCase() + answer3.slice(1).toLowerCase() === correctAnswer3
 } else console.log(" Boboooooooooooo")
 
 // Printing number of rightly answer Question
-console.log(`You got  ${rightAnswers} questions correct` )
+console.log(`You got  ${rightAnswers} questions correct!` )
+console.log(`You scored ${Math.round(rightAnswers * 100/ totalNumberOfQuestions)}% percent`)
 
-
+// You can 
+// let percent = Math.round(rightAnswers * 100/ totalNumberOfQuestions) 
+// console.log("You scored ", percent, "%")
+// In this case there'd be spacen between the percent value and "&", thus use percent.toString() insted of just person
 
